@@ -1,6 +1,8 @@
 # mojo-playground
 
-## Setup Steps
+## Setup steps 
+
+Basic steps to setup mojo with Github Codespaces.
 
 Download Modular CLI. Use Key provided at developer.modular.com/download and replace with <your key>.
 
@@ -32,3 +34,10 @@ Start hello.🔥program.
 mojo hello.🔥
 ```
 
+### Setup vscode 
+
+* Installat estension and set mojo.modularHomePath in .vscode/settings.json
+
+```
+mojo.modularHomePath": "/home/codespace/.modular'
+```
