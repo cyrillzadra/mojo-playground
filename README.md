@@ -36,7 +36,7 @@ mojo hello.🔥
 
 ### Setup vscode 
 
-* Installat estension and set mojo.modularHomePath in .vscode/settings.json
+* Install "Mojo" extension ""https://marketplace.visualstudio.com/items?itemName=modular-mojotools.vscode-mojo"" and set mojo.modularHomePath in .vscode/settings.json
 
 ```
 mojo.modularHomePath": "/home/codespace/.modular'
