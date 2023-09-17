@@ -1,5 +1,7 @@
 # mojo-playground
 
+* Documentation: https://docs.modular.com/mojo/
+
 ## Setup steps 
 
 Basic steps to setup mojo with Github Codespaces.
