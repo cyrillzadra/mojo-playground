@@ -1,6 +1,7 @@
 name: Run Mojo tests
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - "*"
