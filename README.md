@@ -43,3 +43,8 @@ mojo hello.🔥
 ```
 mojo.modularHomePath": "/home/codespace/.modular'
 ```
+
+'''
+    "mojo.modularHomePath": "/home/gitpod/.modular"
+'''
+
