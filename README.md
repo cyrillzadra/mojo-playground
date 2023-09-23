@@ -1,6 +1,8 @@
 # mojo-playground
 
-* Documentation: https://docs.modular.com/mojo/
+## Resources:
+*  Mojo Documentation: https://docs.modular.com/mojo/
+*  Mojo Dojo: https://mojodojo.dev/
 
 ## Setup steps 
 
