@@ -1,4 +1,4 @@
-from basics.basics import run
+from basics_main import basics
 
 def main():
-   run()
+   basics()

@@ -1,4 +1,3 @@
-
 fn data_types():
     print("### Data Types ### ")
     let i : Int = 10
