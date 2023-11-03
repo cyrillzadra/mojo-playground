@@ -4,11 +4,13 @@ tasks:
     before: |
       eval $(command gp env -e)
     command: |
-      curl https://get.modular.com | MODULAR_AUTH=$MODULAR_AUTH sh -
+      curl https://get.modular.com | sh -
+      modular auth $MODULAR_AUTH 
       modular install mojo
       echo 'export MODULAR_HOME="/home/gitpod/.modular"' >> ~/.zshrc
       echo 'export PATH="/home/gitpod/.modular/pkg/packages.modular.com_mojo/bin:$PATH"' >> ~/.zshrc
       source ~/.zshrc
+
 
 vscode:
   extensions:
