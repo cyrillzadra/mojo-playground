@@ -15,6 +15,6 @@
 		}
 	},
 	"containerEnv": {
-		"AUTH_KEY": ""
+		"AUTH_KEY": "${localEnv:MODULAR_AUTH_KEY}"
 	}
 }
