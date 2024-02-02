@@ -8,6 +8,10 @@ fn arithmetic():
     print(1 // 2) # Floored Division
     print(3 % 2) # Remainder (Modulo)
 
+
+fn main(): 
+    variant()
+
     
 
     

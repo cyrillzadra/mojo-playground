@@ -22,3 +22,7 @@ fn data_types():
     # ListLiteral
     # SIMD
     # StringLiteral
+
+
+fn main(): 
+    variant()
