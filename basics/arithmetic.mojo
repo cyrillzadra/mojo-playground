@@ -10,7 +10,7 @@ fn arithmetic():
 
 
 fn main(): 
-    variant()
+    arithmetic()
 
     
 

@@ -5,7 +5,7 @@ from python import Python
 
 fn main() raises:
     # This is equivalent to Python's `import numpy as np`
-    let np = Python.import_module("numpy")
-    let a = np.array([1, 2, 3])
+    var np = Python.import_module("numpy")
+    var a = np.array([1, 2, 3])
 
     print(a)

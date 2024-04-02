@@ -1,16 +1,16 @@
 fn data_types():
     print("### Data Types ### ")
-    let i : Int = 10
+    var i : Int = 10
     print(i)
     # let ii : int = 10   #int (i small) not working
-    let f32 : Float32 = 10
+    var f32 : Float32 = 10
     print(f32)
-    let f64 : Float64 = 10
+    var f64 : Float64 = 10
     print(f64)
-    let b : Bool = True
+    var b : Bool = True
     print(b)
-    let s : String = "Hello"
-    let s2 : String = s.__add__("World")
+    var s : String = "Hello"
+    var s2 : String = s.__add__("World")
     print(s)
     print(s2)
     #let t =  ("Hello","World","!")   # tuple
@@ -25,4 +25,4 @@ fn data_types():
 
 
 fn main(): 
-    variant()
+    data_types()

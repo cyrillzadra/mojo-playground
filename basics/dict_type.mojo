@@ -16,9 +16,11 @@ struct StringKey(KeyElement):
     fn __eq__(self, other: Self) -> Bool:
         return self.s == other.s
 
+    fn __ne__(self, other: Self) -> Bool:
+        return self.s != other.s
+
 fn dict_type():
     print("### Dict Types ### ")
-
 
     var d = Dict[StringKey, Int]()
     d["a"] = 1
