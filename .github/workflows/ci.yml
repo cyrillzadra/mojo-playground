@@ -20,6 +20,7 @@ jobs:
         curl -ssL https://magic.modular.com/| bash
 
     - name: Execute 'magic shell'
+      shell: bash
       run: |
         source $HOME/.bash_profile
         magic run tests
