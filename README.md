@@ -6,33 +6,10 @@
 
 ## Setup steps 
 
-Basic steps to setup mojo with Github Codespaces.
-
-Download Modular CLI. Use Key provided at developer.modular.com/download and replace with <your key>.
+Basic steps to setup mojo with Github Codespaces. Follow instructionson https://docs.modular.com/mojo/manual/get-started.
 
 ```
- curl https://get.modular.com | sh -
-
-```
-
-Modular authentication - Replace <your key> with key from developer.modular.com/download.
-
-```
- modular auth <your key>
-```
-
-Install Mojo SDK.
-
-```
-modular install mojo
-```
-
-Setup environment variable.
-
-```bash
-echo 'export MODULAR_HOME="$HOME/.modular"' >> ~/.bashrc
-echo 'export PATH="$MODULAR_HOME/pkg/packages.modular.com_mojo/bin:$PATH"' >> ~/.bashrc
-source ~/.bashrc
+ curl -ssL https://magic.modular.com/27b23104-fbed-4fb6-a5ef-345288e29a79 | bash
 ```
 
 Start hello.🔥program.

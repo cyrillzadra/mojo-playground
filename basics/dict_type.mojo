@@ -10,7 +10,7 @@ struct StringKey(KeyElement):
     fn __init__(inout self, s: StringLiteral):
         self.s = String(s)
 
-    fn __hash__(self) -> Int:
+    fn __hash__(self) -> UInt:
         return hash(self.s)
 
     fn __eq__(self, other: Self) -> Bool:

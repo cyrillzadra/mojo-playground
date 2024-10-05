@@ -20,7 +20,7 @@
 # ./build-image.sh --mojo-version
 #
 
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 
 ARG DEFAULT_TZ=America/Los_Angeles
 ENV DEFAULT_TZ=$DEFAULT_TZ
@@ -50,12 +50,7 @@ RUN pip install \
         matplotlib \
         ipywidgets
 
-RUN curl -s https://get.modular.com | sh -
-RUN modular install mojo
-
-ARG MODULAR_HOME="/root/.modular"
-ENV MODULAR_HOME=$MODULAR_HOME
-ENV PATH="$PATH:$MODULAR_HOME/pkg/packages.modular.com_mojo/bin"
+RUN curl -ssL https://magic.modular.com/892ad934-40f6-4f01-85c1-b67135230e2e | bash
 
 # Change permissions to allow for Apptainer/Singularity containers
 RUN chmod -R a+rwX /root
