@@ -17,11 +17,11 @@ jobs:
 
     - name: Install Magic
       run: |
-        curl -ssL https://magic.modular.com/27b23104-fbed-4fb6-a5ef-345288e29a79 | bash
+        curl -ssL https://magic.modular.com/| bash
 
     - name: Execute 'magic shell'
-      shell: bash --norc -eo pipefail {0}
       run: |
+        source $HOME/.bash_profile
         magic shell
 
     - name: Run tests
