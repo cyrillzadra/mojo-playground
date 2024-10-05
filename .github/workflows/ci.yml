@@ -19,11 +19,8 @@ jobs:
       run: |
         curl -ssL https://magic.modular.com/| bash
 
-    - name: Execute 'magic shell'
+    - name: Run tests
       shell: bash
       run: |
         source $HOME/.bash_profile
         magic run tests
-
-    - name: Run tests
-      run: mojo tests.mojo
