@@ -15,19 +15,13 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Install modular
+    - name: Install Magic
       run: |
-        curl https://get.modular.com | sh -
+        curl -ssL https://magic.modular.com/27b23104-fbed-4fb6-a5ef-345288e29a79 | bash
 
-    - name: modular auth
+    - name: Execute 'magic shell'
       run: |
-        modular auth ${{ secrets.MODULAR_AUTH }}
-
-    - name: Install Mojo
-      run: modular install mojo
-
-    - name: Add to PATH
-      run: echo "/home/runner/.modular/pkg/packages.modular.com_mojo/bin" >> $GITHUB_PATH
+        magic shell
 
     - name: Run tests
       run: mojo tests.mojo
