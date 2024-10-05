@@ -21,8 +21,7 @@ jobs:
 
     - name: Execute 'magic shell'
       run: |
-        magic shell
-      shell: bash
+        source /home/runner/.bash_profile && magic shell
 
     - name: Run tests
       run: mojo tests.mojo
