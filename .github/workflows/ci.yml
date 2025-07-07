@@ -20,5 +20,7 @@ jobs:
         curl -fsSL https://pixi.sh/install.sh | sh
 
     - name: Run tests
+      shell: bash
       run: |
+        source $HOME/.bashrc
         pixi run tests
