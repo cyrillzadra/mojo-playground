@@ -15,12 +15,12 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Install Magic
+    - name: Install Pixi
       run: |
-        curl -ssL https://magic.modular.com/| bash
+        curl -fsSL https://pixi.sh/install.sh | sh
 
     - name: Run tests
       shell: bash
       run: |
         source $HOME/.bash_profile
-        magic run tests
+        pixi run tests
