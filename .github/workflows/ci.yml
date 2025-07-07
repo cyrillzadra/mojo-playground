@@ -22,5 +22,6 @@ jobs:
     - name: Run tests
       shell: bash
       run: |
+        echo "source $HOME/.bashrc"
         source $HOME/.bashrc
         pixi run tests
