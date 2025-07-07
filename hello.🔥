@@ -1,2 +1,2 @@
-def main():
+fn main():
     print("Hello it's Mojo 🔥time!")

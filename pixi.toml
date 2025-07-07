@@ -10,4 +10,4 @@ version = "0.1.0"
 tests = "mojo tests.mojo"
 
 [dependencies]
-max = ">=24.5.0,<25"
+max = ">=25.4.0,<26"
